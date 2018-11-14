@@ -13,4 +13,4 @@ def collect_by_user(user_id):
     statuses = connexion.user_timeline(id = user_id, count = 200)
     for status in statuses:
         print(status.text)
-    return statuses
+    return
