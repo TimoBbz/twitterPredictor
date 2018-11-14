@@ -1,4 +1,6 @@
-from twitter_collect import twitter_connection_setup
+import pytest
+from twitter_collect import twitter_connection_setup as tw
+
 
 def test_twitter_setup():
-    assert twitter_connection_setup.twitter_setup()is not None
+    assert (tw.twitter_setup() is not None)
