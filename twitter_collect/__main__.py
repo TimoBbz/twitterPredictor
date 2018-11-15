@@ -21,6 +21,6 @@ for id in names_dict:
     for ht in ht_set:
         tweet_global += tg.collect(ht)
     #stockage des tweets
-    ts.store_tweets(tweet_global, "../CandidateData/collected_tweet_" + str(id) + ".txt")
+    ts.store_tweets(tweet_global, "../CandidateData/collected_tweet_" + str(id) + ".json")
 
 
