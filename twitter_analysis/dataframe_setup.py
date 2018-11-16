@@ -4,7 +4,7 @@ from twitter_analysis import opinion_tweets as ot
 
 
 def set_dataframe(filename):
-    #tweets is a json object containing all tweets about a candidate
+    #filename is a json object containing all tweets about a candidate
     tweets=[]
     with open(filename,"r",encoding="utf-8") as fichier:
         tweets = json.load(fichier)
