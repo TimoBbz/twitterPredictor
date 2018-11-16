@@ -1,7 +1,5 @@
 import seaborn
 import pandas
 
-def sort_by_date(datas):
-    df=datas.groupby('date')
-    print(df)
-
+def display(datas):
+    seaborn.lineplot(x="date",y="polarity",data=datas)

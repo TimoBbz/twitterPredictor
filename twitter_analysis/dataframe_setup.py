@@ -13,4 +13,4 @@ def set_dataframe(filename):
     #ajout de la ligne de polarité
     polarity = [ot.textblob_analysis(tweet) for tweet in df2["text"]]
     df2["polarity"] = pandas.Series(polarity, index=df2.index)
-    print(df2)
+    return df2
