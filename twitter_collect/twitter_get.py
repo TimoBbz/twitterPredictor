@@ -4,7 +4,7 @@ import tweepy
 
 def collect(keyword):
     connexion = tcs.twitter_setup()
-    first_id = 1063189466007969792
+    first_id = 1057640510356180992
     searches = tweepy.models.SearchResults()
     while True:
         new_searches = connexion.search(keyword, language="french", count=100, since_id=first_id)
